@@ -2,9 +2,9 @@
 /// `13` if `n` is divisible by `3`,
 /// `17` otherwise.
 fn magic_number(n: u32) -> u32 {
-    if n % 2 == 0 {
+    if n.is_multiple_of(2) {
         12
-    } else if n % 3 == 0 {
+    } else if n.is_multiple_of(3) {
         13
     } else {
         17
